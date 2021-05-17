@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 const LayoutBlog = (props) => {
   const { children } = props
@@ -15,8 +16,9 @@ const LayoutBlog = (props) => {
             <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
             <div class="menu-menu-1-container">
                 <ul id="menu-menu-1" class="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="blog.html">Blog</a></li>
+                    <li>   <Link to="/home">Home</Link></li>
+                    <li>   <Link to="/blog">Blog</Link></li>
+                    <li>   <Link to="/about">About</Link></li>
                 </ul>
             </div>
           </nav>

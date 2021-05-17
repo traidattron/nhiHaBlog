@@ -7,7 +7,8 @@ import LayoutBlog from './containers/layout/Layout'
 import { GlobalStyle } from './theme/globalStyles'
 import Blogs from './pages/Blogs'
 import BlogDetail from './pages/BlogDetail'
-
+import About from './pages/About'
+import Home from './pages/Home'
 const App = () => {
   return (
     <ApolloProvider client={client}>
@@ -15,8 +16,10 @@ const App = () => {
         <LayoutBlog>
           <GlobalStyle/>
           <Switch>
-            <Route exact path='/'><Blogs/></Route>
+            <Route exact path='/home'><Home/></Route>
+            <Route path='/blog'><Blogs/></Route>
             <Route path='/blog-detail'><BlogDetail/></Route>
+            <Route path='/about'><About/></Route>
           </Switch>
         </LayoutBlog>
       </Router>
