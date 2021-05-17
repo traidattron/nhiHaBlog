@@ -16,7 +16,8 @@ const App = () => {
         <LayoutBlog>
           <GlobalStyle/>
           <Switch>
-            <Route exact path='/home'><Home/></Route>
+            <Route exact path='/'><Home/></Route>
+            <Route path='/home'><Home/></Route>
             <Route path='/blog'><Blogs/></Route>
             <Route path='/blog-detail'><BlogDetail/></Route>
             <Route path='/about'><About/></Route>
