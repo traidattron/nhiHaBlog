@@ -7,8 +7,8 @@ const LayoutBlog = (props) => {
       <div class="container">
         <header id="masthead" class="site-header">
           <div class="site-branding">
-            <h1 class="site-title"><a href="index.html" rel="home">Moschino</a></h1>
-            <h2 class="site-description">Minimalist Portfolio HTML Template</h2>
+            <h1 class="site-title"><a href="index.html" rel="home">2 NGƯỜI ĐI KHẮP THẾ GIAN</a></h1>
+            <h2 class="site-description">Follow your heart</h2>
           </div>
           <nav id="site-navigation" class="main-navigation">
             <button class="menu-toggle">Menu</button>
@@ -27,7 +27,7 @@ const LayoutBlog = (props) => {
                 <div class="container">
                     <div class="site-info">
                         {/* <h1 style="font-family: 'Herr Von Muellerhoff';color: #ccc;font-weight:300;text-align: center;margin-bottom:0;margin-top:0;line-height:1.4;font-size: 46px;">Moschino</h1> */}
-                        <a target="blank" href="https://www.wowthemes.net/">&copy; Moschino - Free HTML Template by WowThemes.net</a>
+                        <a target="blank" href="https://www.wowthemes.net/">&copy; Zelda & Tê Tê</a>
                     </div>
                 </div>
         </footer>
