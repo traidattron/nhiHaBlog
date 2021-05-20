@@ -16,7 +16,7 @@ const HomeCover = styled.div`
 const ImgAboutCover = styled.p`
 	text-align: center;
 	img{
-		border:10px solid #f4f5f6;
+			border:10px solid #f4f5f6;
 		border-radius: 50%;
 		width: 150px;
 		height: 150px;
