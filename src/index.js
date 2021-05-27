@@ -9,15 +9,39 @@ import * as serviceWorker from './serviceWorker'
 import { ThemeProvider } from 'styled-components'
 import { theme } from './theme/theme'
 import { GlobalStyle } from './theme/globalStyles'
+import { ApolloClient, InMemoryCache, gql } from '@apollo/client'
+import { ApolloProvider } from '@apollo/client/react'
 
+const client = new ApolloClient({
+  uri: 'https://graphql-ourblogs.herokuapp.com/',
+  cache: new InMemoryCache()
+});
+// client
+//   .query({
+//     query: gql`
+//     query allBlogs{
+//       allBlog{
+//           title
+//           content
+//           id
+//           public
+//           user{
+//               username
+//               name
+//           }
+//       }
+//   }
+//     `
+//   })
+//   .then(result => console.log(result));
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store}>
+    <ApolloProvider client={client}>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <App />
       </ThemeProvider>
-    </Provider>
+    </ApolloProvider>
   </React.StrictMode>,
   document.getElementById('root')
 )
