@@ -30,6 +30,7 @@ const Blogs = () => {
                     title={article.title}
                     content={article.content}
                     date={article.date}
+                    id={article.id}
                 />)}
                 </BlogsCover>
             }

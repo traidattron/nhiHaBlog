@@ -19,7 +19,7 @@ const App = () => {
           <Route exact path='/'><Home /></Route>
           <Route path='/home'><Home /></Route>
           <Route path='/blog'><Blogs /></Route>
-          <Route path='/blog-detail'><BlogDetail /></Route>
+          <Route path='/blog-detail/:id'><BlogDetail /></Route>
           <Route path='/about'><About /></Route>
         </Switch>
       </LayoutBlog>
