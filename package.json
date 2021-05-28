@@ -29,9 +29,9 @@
     "yarn": "^1.22.10"
   },
   "scripts": {
-    "start": "cp .env.staging .env && craco start",
-    "build": "cp .env.production .env && craco build",
-    "build-stag": "cp .env.staging .env && craco build",
+    "start": "craco start",
+    "build": "craco build",
+    "build-stag": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
   },
