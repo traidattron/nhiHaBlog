@@ -9,11 +9,12 @@ import Blogs from './pages/Blogs'
 import BlogDetail from './pages/BlogDetail'
 import About from './pages/About'
 import Home from './pages/Home'
+import LayoutBlog2 from './containers/layout/Layout2'
 const App = () => {
   return (
 
     <Router>
-      <LayoutBlog>
+      <LayoutBlog2>
         <GlobalStyle />
         <Switch>
           <Route exact path='/'><Home /></Route>
@@ -22,7 +23,7 @@ const App = () => {
           <Route path='/blog-detail/:id'><BlogDetail /></Route>
           <Route path='/about'><About /></Route>
         </Switch>
-      </LayoutBlog>
+      </LayoutBlog2>
     </Router>
 
   )

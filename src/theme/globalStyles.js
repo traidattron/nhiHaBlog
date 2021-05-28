@@ -486,11 +486,12 @@ a:active,a:focus {
 	margin:0 auto;
 }
 .main-navigation {
-	background-color:#fff;
+	background-color:#FFFAF2;
 	font-size:14px;
 	font-weight:700;
 	letter-spacing:1px;
 	padding:15px 0;
+	margin-bottom: 15px;
 	border-top:1px solid;
 	border-bottom:1px solid;
 	text-transform:uppercase;
