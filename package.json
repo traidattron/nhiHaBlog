@@ -23,6 +23,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.2",
     "react-spinners": "^0.10.6",
+    "react-sticky-nav": "^4.0.6",
     "source-map-loader": "^2.0.2",
     "styled-components": "^5.2.1",
     "ts-loader": "^9.2.1",

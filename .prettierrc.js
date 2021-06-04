@@ -5,5 +5,6 @@ module.exports = {
     "jsxSingleQuote": true,
     "tabWidth": 4,
     "jsxBracketSameLine": false,
-    "printWidth": 120
+    "printWidth": 100,
+    "singleAttributePerLine": true
 }
