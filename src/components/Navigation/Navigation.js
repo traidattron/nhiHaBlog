@@ -18,9 +18,7 @@ const Navigation = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
-    useEffect(() => {
-        console.log('vi tri: ', scrollPosition)
-    },[scrollPosition])
+    
 
     return (
         <Menu mode="horizontal" style={{width: '100%', background: 'rgba(12, 0, 0, 0.43)', display: 'flex', color: 'white', position: scrollPosition > 50 ? 'fixed' : '', top: scrollPosition > 50 ? '0' : '' }}>

@@ -1,11 +1,11 @@
 const colors = {
-  primary: '#4d487d',
+  primary: '#708265',
   primaryHover: '#6359c5',
   secondary: '#E1E1E1',
   secondaryHover: 'purple',
   dark: '#3B3B3B',
   highlight: '#FF2A42',
-  grayBackground: '#f9f9f9',
+  background: '#F8F7F3',
   textColor: '#000000d9'
 }
 
