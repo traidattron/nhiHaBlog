@@ -7,6 +7,7 @@ import { Image } from 'antd';
 import { LineOutlined } from '@ant-design/icons'
 import LastedBlogBlock from '../components/Block/LastedBlogBlock'
 import Footer from '../components/Footer/Footer'
+import BlogsBlock from '../components/Block/BlogsBlock'
 
 const Home = () => {
 
@@ -54,6 +55,7 @@ const Home = () => {
 
          </TitleBlock>
          <LastedBlogBlock />
+
          <TitleBlock>
             <div style={{ lineHeight: '0' }}>
                <TextLarge style={{ color: 'black' }}>OUR BLOGS</TextLarge>
@@ -65,6 +67,7 @@ const Home = () => {
 
 
          </TitleBlock>
+         <BlogsBlock />
          <Footer />
       </>
    )
