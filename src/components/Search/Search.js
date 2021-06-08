@@ -8,11 +8,11 @@ const SearchCover = styled.div`
 `
 const RoundSearch = styled(Input.Search)`
   .ant-input {
-    border-radius: 25px;
+    border-radius: 5px;
   }
   .ant-input-search > .ant-input-group > .ant-input-group-addon:last-child .ant-input-search-button {
   
-    border-radius: 0 25px 25px 0 !important;
+    /* border-radius: 0 25px 25px 0 !important; */
 }
 `;
 const SearchCustom = () => {

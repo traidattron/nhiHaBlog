@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Menu } from 'antd';
-import { MailOutlined, AppstoreOutlined, SettingOutlined } from '@ant-design/icons';
+import { HomeOutlined, AppstoreOutlined, SettingOutlined } from '@ant-design/icons';
 import {useState, useEffect} from 'react'
 
 const { SubMenu } = Menu;
@@ -23,24 +23,24 @@ const Navigation = () => {
     return (
         <Menu mode="horizontal" style={{width: '100%', background: 'rgba(12, 0, 0, 0.43)', display: 'flex', color: 'white', position: scrollPosition > 50 ? 'fixed' : '', top: scrollPosition > 50 ? '0' : '' }}>
            
-            <Menu.Item key="mail" icon={<MailOutlined />}>
-                Home
+            <Menu.Item key="mail" icon={<HomeOutlined />}>
+                HOME
             </Menu.Item>
             <Menu.Item key="app" icon={<AppstoreOutlined />}>
-                Photos
+                PHOTOS
             </Menu.Item>
-            <SubMenu key="SubMenu" icon={<SettingOutlined />} title="Blogs">
+            <SubMenu key="SubMenu" icon={<SettingOutlined />} title="BLOGS">
                 <Menu.Item key="setting:1">Zelda Stories</Menu.Item>
                 <Menu.Item key="setting:4">Nemo Games</Menu.Item>
             </SubMenu>
             <Menu.Item key="alipay">
                
-                    About
+                    ABOUT
             
             </Menu.Item>
             <Menu.Item key="hi" style={{ marginLeft: 'auto' }}>
                     
-                    Hi - Zelda
+                    HI - FRIENDS
     
             </Menu.Item>
         </Menu>

@@ -6,7 +6,7 @@ const Footer = props => {
         <FlexVertical>
             <Image
                 width={'300px'}
-
+                style={{ marginTop: '20px' }}
                 src={'footericon.svg'}
                 preview={false}
             />

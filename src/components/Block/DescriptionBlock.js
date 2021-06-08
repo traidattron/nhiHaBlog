@@ -8,7 +8,7 @@ const DescriptionBlock = () => {
             style={{ width: '30%' }}
             cover={
                 <div>
-                    <img alt="example" src="description.svg" style={{ height: '100%' }}
+                    <img alt="example" src="description.jpg "
                     />
                 </div>
             }
