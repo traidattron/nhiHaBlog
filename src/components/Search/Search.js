@@ -3,22 +3,21 @@ import styled from 'styled-components'
 const { Search } = Input
 
 const SearchCover = styled.div`
-    padding: 0 95px 0 95px;   
-    width: 50%;     
-`
-const RoundSearch = styled(Input.Search)`
-  .ant-input {
-    border-radius: 5px;
-  }
-  .ant-input-search > .ant-input-group > .ant-input-group-addon:last-child .ant-input-search-button {
-  
-    /* border-radius: 0 25px 25px 0 !important; */
-}
+    padding: 0 95px;
+    width: 70%;     
 `;
+
 const SearchCustom = () => {
     return (
         <SearchCover>
-            <RoundSearch placeholder="input search text" enterButton="Search" size="large" />
+            <Search
+                prefix={<img width={25} alt="search-icon" src="search-icon.svg"></img>}
+                placeholder="Typing"
+                allowClear
+                enterButton="Search"
+                size="large"
+                onSearch={() => console.log('search function here')}
+            />
         </SearchCover>
 
     )
