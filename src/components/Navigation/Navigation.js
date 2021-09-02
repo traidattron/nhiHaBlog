@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { Menu } from 'antd';
 import { HomeOutlined, AppstoreOutlined, SettingOutlined } from '@ant-design/icons';
 import {useState, useEffect} from 'react'
+import styled from "styled-components";
 
 const { SubMenu } = Menu;
 const Navigation = () => {
@@ -18,18 +19,33 @@ const Navigation = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+    const navigationStyle = {
+        zIndex: 1,
+        width: '100%',
+        background: 'rgba(12, 0, 0, 0.43)',
+        display: 'flex',
+        color: 'white',
+        position: scrollPosition > 50 ? 'fixed' : '',
+        top: scrollPosition > 50 ? '0' : '',
+        fontWeight: 700,
+        fontSize: 18,
+    }
+
+    const iconStyle = {
+        fontSize: 20
+    }
     
 
     return (
-        <Menu mode="horizontal" style={{width: '100%', background: 'rgba(12, 0, 0, 0.43)', display: 'flex', color: 'white', position: scrollPosition > 50 ? 'fixed' : '', top: scrollPosition > 50 ? '0' : '' }}>
-           
-            <Menu.Item key="mail" icon={<HomeOutlined />}>
+        <Menu size="large" mode="horizontal" style={navigationStyle}>
+            <Menu.Item key="mail" icon={<HomeOutlined style={iconStyle}/>}>
                 HOME
             </Menu.Item>
-            <Menu.Item key="app" icon={<AppstoreOutlined />}>
+            <Menu.Item key="app" icon={<AppstoreOutlined style={iconStyle}/>}>
                 PHOTOS
             </Menu.Item>
-            <SubMenu key="SubMenu" icon={<SettingOutlined />} title="BLOGS">
+            <SubMenu key="SubMenu" icon={<SettingOutlined style={iconStyle}/>} title="BLOGS">
                 <Menu.Item key="setting:1">Zelda Stories</Menu.Item>
                 <Menu.Item key="setting:4">Nemo Games</Menu.Item>
             </SubMenu>
@@ -39,9 +55,7 @@ const Navigation = () => {
             
             </Menu.Item>
             <Menu.Item key="hi" style={{ marginLeft: 'auto' }}>
-                    
                     HI - FRIENDS
-    
             </Menu.Item>
         </Menu>
         // <nav id='site-navigation' class='main-navigation'>
