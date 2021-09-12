@@ -1,21 +1,23 @@
 import { Card } from 'antd';
+import { Link } from 'react-router-dom';
 const { Meta } = Card;
 
-const DescriptionBlock = () => {
+const DescriptionBlock = (props) => {
     return (
         <Card
             hoverable
             style={{ width: '30%' }}
             cover={
-                <div>
-                    <img alt="example" src="description.jpg "
-                    />
+                <div style={{ padding: '10px' }}>
+                    <Link to='/blog-detail/${props.id}'>
+                        <img alt='examplefalse' src='description.jpg ' />
+                    </Link>
                 </div>
             }
         >
-            <Meta title="Đón hè cùng Sờ Ta Bất" description="Zelda rủ tôi đi đón hè. Đi Viện bảng tàng Mỹ Thuật. Đi ăn buffet ở trung tâm thành phố, nói ..." />
+            <Meta title={props.title} description={props.description} />
         </Card>
-    )
-}
+    );
+};
 
-export default DescriptionBlock
+export default DescriptionBlock;

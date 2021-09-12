@@ -1,0 +1,5 @@
+.cover{
+    display: -ms-flexbox!important;
+    display: flex!important;
+    padding: 10px;
+}

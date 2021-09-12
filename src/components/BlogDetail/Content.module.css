@@ -1,0 +1,7 @@
+.content{
+    padding: 10px;
+    background-color: azure;
+    flex: 1 1 auto!important;
+    /* margin-left: 10px; */
+    margin-right: 10px;
+}

@@ -1,0 +1,40 @@
+{
+    "blogs": [
+        {
+            "id": 1,
+            "title": "Hold me tight",
+            "description": "It feels so right now Hold me tight It feels so right now"
+        },
+        {
+            "id": 2,
+            "title": "Let me go on loving you",
+            "description": "It feels so right now Hold me tight It feels so right now"
+        },
+        {
+            "id": 3,
+            "title": "So hold (hold) me tight (me tight)",
+            "description": "It feels so right now Hold me tight It feels so right now"
+        }
+    ],
+    "blogDetails": [
+        {
+            "id": 1,
+            "content":"ok just suppose this is content, but in the future this content must be in html format",
+            "liked": 3,
+            "comments":[]
+        },
+        {}
+    ],
+    "RelatedArticle":[
+        {
+            "id":1,
+            "name": "More story",
+            "data":[
+                {"name": "2 Day in Nepel", "id": 1, "link": "https://abc.com"},
+                {"name": "2 Day in India", "id": 2, "link": "https://abc.com"},
+                {"name": "2 Day in Kenya", "id": 3, "link": "https://abdc.com"}
+                
+            
+            ]        }
+    ]
+}
