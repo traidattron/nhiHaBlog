@@ -36,5 +36,20 @@
                 
             
             ]        }
+    ],
+    "authors": [
+        {
+            "name": "Zelda",
+            "description": "But art, true art that is, truly does have the capability of bringing us all together and revealing to ourselves our true nature as human beings. We are driven to create and appreciate great pieces of music, films and paintings even those that are apolitical and seemingly irrelevant to the on-going events - out of boredom, and the ever desire to express our thoughts and emotions",
+            "avatar": "zelda-profile-picture.png",
+            "background": "zelda-avatar-background.svg",
+            "side": "right"
+        },
+        {
+            "name": "Nemo",
+            "description": "Hi, guys. I'm Nemo. I'm a learner. I love reading, painting, trekking and traveling. My memory is pretty bad so I created this blog to write down the events that happened in my life, save the painting I painted as well as the pictures I took. I always try to make my life more thrilling to live. For me, stop doing that and commit suicide are the same meaning.",
+            "avatar": "nemo-profile-picture.png",
+            "background": "nemo-avatar-background.svg"
+        }
     ]
 }

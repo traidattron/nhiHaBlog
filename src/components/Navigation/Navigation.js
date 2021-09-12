@@ -25,21 +25,21 @@ const Navigation = () => {
         width: '100%',
         background: 'rgba(12, 0, 0, 0.43)',
         display: 'flex',
-        color: 'white',
         position: scrollPosition > 50 ? 'fixed' : '',
         top: scrollPosition > 50 ? '0' : '',
+        color: 'white',
         fontWeight: 700,
-        fontSize: 18,
+        fontSize: 18
     }
 
     const iconStyle = {
         fontSize: 20
     }
-    
 
     return (
         <Menu size="large" mode="horizontal" style={navigationStyle}>
             <Menu.Item key="mail" icon={<HomeOutlined style={iconStyle}/>}>
+                <Link to='/'/>
                 HOME
             </Menu.Item>
             <Menu.Item key="app" icon={<AppstoreOutlined style={iconStyle}/>}>
@@ -50,9 +50,8 @@ const Navigation = () => {
                 <Menu.Item key="setting:4">Nemo Games</Menu.Item>
             </SubMenu>
             <Menu.Item key="alipay">
-               
-                    ABOUT
-            
+                <Link to='/about'/>
+                ABOUT
             </Menu.Item>
             <Menu.Item key="hi" style={{ marginLeft: 'auto' }}>
                     HI - FRIENDS
