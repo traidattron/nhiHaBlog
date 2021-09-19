@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
 /*
@@ -57,7 +57,7 @@ html {
 	box-sizing:border-box;
 }
 body {
-	background:#fff;
+	background:#F8F7F3;
 }
 article,aside,details,figcaption,figure,footer,header,main,nav,section {
 	display:block;
@@ -2297,4 +2297,4 @@ h1, h2, h3, h4, h5, h6 {
     -o-transition: border linear 0.2s,box-shadow linear 0.2s;
     transition: border linear 0.2s,box-shadow linear 0.2s;
 }
-`
+`;

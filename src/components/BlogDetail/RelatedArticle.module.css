@@ -1,7 +1,8 @@
 .article-bg{
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     padding: 10px;
     width: 30vw;
+    background-image: url('/public/Rectangle30.png');
 }
 .link{
     list-style-type:none;

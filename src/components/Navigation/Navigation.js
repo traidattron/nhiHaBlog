@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import { Menu } from 'antd';
 import { HomeOutlined, AppstoreOutlined, SettingOutlined } from '@ant-design/icons';
-import {useState, useEffect} from 'react'
-import styled from "styled-components";
+import { useState, useEffect } from 'react';
+import styled from 'styled-components';
 
 const { SubMenu } = Menu;
 const Navigation = () => {
@@ -29,6 +29,7 @@ const Navigation = () => {
         top: scrollPosition > 50 ? '0' : '',
         color: 'white',
         fontWeight: 700,
+<<<<<<< Updated upstream
         fontSize: 18
     }
 
@@ -41,20 +42,41 @@ const Navigation = () => {
             <Menu.Item key="mail" icon={<HomeOutlined style={iconStyle}/>}>
                 <Link to='/'/>
                 HOME
+=======
+        fontSize: 18,
+    };
+
+    const iconStyle = {
+        fontSize: 20,
+    };
+
+    return (
+        <Menu size='large' mode='horizontal' style={navigationStyle}>
+            <Menu.Item key='mail' icon={<HomeOutlined style={iconStyle} />}>
+                <Link to='/'>HOME</Link>
+>>>>>>> Stashed changes
             </Menu.Item>
-            <Menu.Item key="app" icon={<AppstoreOutlined style={iconStyle}/>}>
-                PHOTOS
+            <Menu.Item key='app' icon={<AppstoreOutlined style={iconStyle} />}>
+                <Link to='/photos'>PHOTOS</Link>
             </Menu.Item>
-            <SubMenu key="SubMenu" icon={<SettingOutlined style={iconStyle}/>} title="BLOGS">
-                <Menu.Item key="setting:1">Zelda Stories</Menu.Item>
-                <Menu.Item key="setting:4">Nemo Games</Menu.Item>
+            <SubMenu key='SubMenu' icon={<SettingOutlined style={iconStyle} />} title='BLOGS'>
+                <Menu.Item key='setting:1'>Zelda Stories</Menu.Item>
+                <Menu.Item key='setting:4'>Nemo Games</Menu.Item>
             </SubMenu>
+<<<<<<< Updated upstream
             <Menu.Item key="alipay">
                 <Link to='/about'/>
                 ABOUT
+=======
+
+            <Menu.Item key='alipay'>
+                {' '}
+                <Link to='/about'>ABOUT</Link>
+>>>>>>> Stashed changes
             </Menu.Item>
-            <Menu.Item key="hi" style={{ marginLeft: 'auto' }}>
-                    HI - FRIENDS
+
+            <Menu.Item key='hi' style={{ marginLeft: 'auto' }}>
+                HI - FRIENDS
             </Menu.Item>
         </Menu>
         // <nav id='site-navigation' class='main-navigation'>

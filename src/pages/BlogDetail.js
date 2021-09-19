@@ -3,6 +3,7 @@ import classes from './BlogDetail.module.css';
 import RelatedArticle from '../components/BlogDetail/RelatedArticle';
 import useHttp from '../hooks/use-http';
 import Content from '../components/BlogDetail/Content';
+import Header from '../containers/Header/Header';
 const BlogDetail = () => {
     const [data, setData] = useState([]);
     const config = { url: 'http://localhost:3001/RelatedArticle', method: 'GET' };
@@ -12,7 +13,7 @@ const BlogDetail = () => {
     }, [getTask]);
     return (
         <>
-            <header>this is header</header>
+            <Header />
             <div className={classes.cover}>
                 <Content content={'nhi content'} />
 
