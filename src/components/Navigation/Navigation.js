@@ -29,20 +29,6 @@ const Navigation = () => {
         top: scrollPosition > 50 ? '0' : '',
         color: 'white',
         fontWeight: 700,
-<<<<<<< Updated upstream
-        fontSize: 18
-    }
-
-    const iconStyle = {
-        fontSize: 20
-    }
-
-    return (
-        <Menu size="large" mode="horizontal" style={navigationStyle}>
-            <Menu.Item key="mail" icon={<HomeOutlined style={iconStyle}/>}>
-                <Link to='/'/>
-                HOME
-=======
         fontSize: 18,
     };
 
@@ -51,28 +37,22 @@ const Navigation = () => {
     };
 
     return (
-        <Menu size='large' mode='horizontal' style={navigationStyle}>
-            <Menu.Item key='mail' icon={<HomeOutlined style={iconStyle} />}>
-                <Link to='/'>HOME</Link>
->>>>>>> Stashed changes
+        <Menu size='large' mode='horizontal' style={navigationStyle} defaultSelectedKeys={['home']}>
+            <Menu.Item key='home' icon={<HomeOutlined style={iconStyle} />}>
+                HOME
+                <Link to='/' />
             </Menu.Item>
-            <Menu.Item key='app' icon={<AppstoreOutlined style={iconStyle} />}>
+            <Menu.Item key='photos' icon={<AppstoreOutlined style={iconStyle} />}>
                 <Link to='/photos'>PHOTOS</Link>
             </Menu.Item>
             <SubMenu key='SubMenu' icon={<SettingOutlined style={iconStyle} />} title='BLOGS'>
                 <Menu.Item key='setting:1'>Zelda Stories</Menu.Item>
                 <Menu.Item key='setting:4'>Nemo Games</Menu.Item>
             </SubMenu>
-<<<<<<< Updated upstream
-            <Menu.Item key="alipay">
-                <Link to='/about'/>
-                ABOUT
-=======
 
-            <Menu.Item key='alipay'>
-                {' '}
-                <Link to='/about'>ABOUT</Link>
->>>>>>> Stashed changes
+            <Menu.Item key='about' icon={<HomeOutlined style={iconStyle} />}>
+                ABOUT
+                <Link to='/about' />
             </Menu.Item>
 
             <Menu.Item key='hi' style={{ marginLeft: 'auto' }}>
