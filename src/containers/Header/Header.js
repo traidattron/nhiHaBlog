@@ -16,9 +16,9 @@ const Header = () => {
             <NavigatorCover>
                 <Image
                     width={200}
-                    src='mylogo.svg'
+                    src='/mylogo.svg'
                     preview={{
-                        src: 'mylogo.svg',
+                        src: '/mylogo.svg',
                     }}
                 />
                 <MyNavigation />

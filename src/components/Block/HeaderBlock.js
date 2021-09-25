@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import colors from '../../theme/colors';
 
 export const HeaderBlock = styled.div`
-    background-image: url('home-bg.jpg');
+    background-image: url('/home-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
